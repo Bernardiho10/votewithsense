@@ -18,23 +18,27 @@ export default function Index() {
   }
 
   return (
-    <div className="mobile-frame">
+    
+    <div className="mobile-frame container content-center h-screen mx-auto p-4">
+      <div className="grid grid-rows-2 text-center font-extrabold text-lg content-center gap-2">
       <h1>Show Your Support</h1>
       
       {!mode ? (
-        <div className="flex gap-4">
-          <Button onClick={() => setMode('camera')}>
+        <div className="flex gap-4 flex-col">
+          <Button className="rounded-full size-40 m-auto" onClick={() => setMode('camera')}>
             Take Photo
           </Button>
           <Input
             type="file"
             accept="image/*"
             onChange={(e) => handleUpload(e)}
+            className="border-dashed border-gray-500 rounded-md"
           />
         </div>
       ) : (
-        <Webcam onCapture={(img) => navigate('/crop')} />
+        <Webcam capture={(img) => navigate('/crop')} />
       )}
+      </div>
     </div>
   );
 }
