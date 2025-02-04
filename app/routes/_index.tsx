@@ -13,8 +13,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const [mode, setMode] = useState<"camera" | "upload">();
-  const handleUpload = (e) => {
-    console.log(e.target.files);
+  const handleUpload = () => {
+    console.log("e.target.files");
   }
 
   return (
@@ -31,12 +31,12 @@ export default function Index() {
           <Input
             type="file"
             accept="image/*"
-            onChange={(e) => handleUpload(e)}
+            onChange={() => handleUpload()}
             className="border-dashed border-gray-500 rounded-md"
           />
         </div>
       ) : (
-        <Webcam capture={(img) => navigate('/crop')} />
+        <Webcam  />
       )}
       </div>
     </div>
