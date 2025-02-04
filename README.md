@@ -1,40 +1,10 @@
-# Welcome to Remix!
+# Welcome to Vote with Sense Social Experiment!
 
-- 📖 [Remix docs](https://remix.run/docs)
-
-## Development
-
-Run the dev server:
-
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+-  We want to develop a mobile web app that offers users show their support for the 
+Peter Obi & Labour Party candidacy leading up to the general elections in 2027.
+ 
+ - The webApp will only be accessible via mobile/tablet browsers. Users accessing via 
+other devices will see a page directing them to access via mobile device. The 
+project is the first of a series of social experiments designed to engage the voting 
+populace with targeted activities to drive trends on social media and enforce a 
+narrative
